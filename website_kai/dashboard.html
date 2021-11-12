@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Kaiying</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+
+    <!----CSS custom---->
+    <link rel="stylesheet" href="assets/css/guideline.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- nav start -->
+    <div class="header">
+        <div class="navbar">
+            <h1 class="logo"><a href="index.html">KAI</a></h1>
+            <ul class="navbar-right">
+                <ul class="drop-down-menu">
+                    <li>
+                        <a href="#" class="navbar-item-style"
+                            style="padding-top:0px; padding-left:0px; padding-right:60px">WORK</a>
+                        <ul>
+                            <li>
+                                <a href="dashboard.html" class="navbar-item-small-style">Dashboard Design</a>
+                            </li>
+                            <li>
+                                <a href="appproduct.html" class="navbar-item-small-style">App Design</a>
+                            </li>
+                            <li>
+                                <a href="webproduct.html" class="navbar-item-small-style">Web Design</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <li><a href="resume.html" class="navbar-item-style">RESUME</a></li>
+                <li><a href="#footer" class="navbar-item-style">CONTACT</a></li>
+            </ul>
+            <ul id="popup-menu" class="nav">
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">Dashboard Design</a>
+                </li>
+                <li class="nav-item">
+                    <a href="appproduct.html" class="nav-link">App Design</a>
+                </li>
+                <li class="nav-item">
+                    <a href="webproduct.html" class="nav-link">Web Design</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </li>
+
+                <!-- 
+                <a href="#!" class="close-btn">
+                    <span></span>
+                    <span></span>
+                </a>
+                --->
+
+            </ul>
+            <a href="#popup-menu" class="menu-toggle" style="margin-right:48px">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <!-- nav end -->
+
+    <!-- banner start-->
+    <section id="banner">
+        <div class="web-banner-container">
+            <img src="img/dashboard/dashboard_banner.png" alt="">
+
+        </div>
+    </section>
+    <!-- banner end-->
+
+
+    <div class="container">
+        <!-- main  start -->
+        <!-- 01--專案簡介-- start -->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <section id="info-section">
+                    <div class="info-container">
+                        <h3 class="title">01<br>專案簡介</h3><br>
+                        <div class="product-info">
+                            <p>這是一個公司行銷電子報系統後台的改版專案，​整合各部門對於系統的需求和管理，提升電子報系統效率。我的目標是透過存在系統已久的問題和訪談使用該系統的各部門同事，思考再次優化後台系統。
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <!-- 01--專案簡介-- end -->
+
+        <!-- 02--研究問題與目標-- start -->
+        <section id="goal-section">
+            <div class="info-container">
+                <h3 class="title">02<br>研究問題與目標</h3><br>
+                <div class="product-info">
+                    <p><span style="font-weight: bold;">有自己的行銷電子報系統但效率低和電郵成效無法追蹤</span></p>
+                    <p>公司提供的派送電子報系統龐大，但後期發展各項業務後，業務使用的客戶名單和原本系統的名單各自為政。導致每個行銷活動的電子報成效無法有效的追蹤，以及當客戶群重複收信後，演變我們成為擋信名單。
+                    </p>
+                    <p><span style="font-weight: bold;">各部門使用系統的同仁角色眾多需求各個不同
+                            當各部門同仁使用該系統時，會有以下問題</span></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="main-problem">
+                        <h4 style="font-weight: bold;">設計排信</h4>
+                        <p>每份電子報都需要編寫語法，不知道可不可以建置可拖曳的元件快速建立電子報？而且排信系統介面對於新人不友善，操作好複雜。</p>
+                    </div>
+                    <img src="img/dashboard/dash-01.png" width="160" height="160" alt="">
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="main-problem">
+                        <h4 style="font-weight: bold;">行銷數據</h4>
+                        <p>每個活動的成效不知道好不好？希望能有開信率，點閱率，退信率等數據。</p>
+                    </div>
+                    <img src="img/dashboard/dash-02.png" width="160" height="160" alt="">
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="main-problem">
+                        <h4 style="font-weight: bold;">主管簽核</h4>
+                        <p>每個活動都要順簽才通過，還要口頭通知下一位主管，不知道能不能客製每個活動的簽核主管呢？</p>
+                    </div>
+                    <img src="img/dashboard/dash-03.png" width="160" height="160" alt="">
+                </div>
+            </div>
+
+
+        </section>
+        <!-- 02--研究問題與目標-- end -->
+
+        <!-- 03--API說明圖示-- start -->
+        <section id="journey-section">
+            <div class="info-container">
+                <h3 class="title">03<br>設計目標</h3><br>
+                <div class="product-info">
+                    <ul class="persona-list">
+                        <li>
+                            <p>1. 透過訪談重點同仁（設計排信人員），在第一階段重新規劃給新手和熟手友善且幫助快速建立電子報和排信的介面設計。</p>
+                        </li>
+                        <li>
+                            <p>2. 在系統首頁提供給各部門同仁重點資訊，方便各部門同仁登入後查看。</p>
+                        </li>
+                        <li>
+                            <p>3. 整合舊系統和業務資料庫客戶名單，當資料來源整合後，新系統使用時只需同步更新成最新的資料庫即可。</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- 點擊放大圖  -->
+            <div class="api-image">
+                <a href="#!"><img src="img/dashboard/api_chart.png"></a>
+            </div>
+
+
+        </section>
+        <!-- 03--API說明圖示-- end -->
+
+
+        <!-- 04--資訊架構-- start -->
+        <section class="structure-section">
+            <div class="info-container">
+                <h3 class="title">04<br>資訊架構</h3><br>
+            </div>
+            <img src="img/dashboard/dashboard_ia.png" width="800" height="800">
+        </section>
+        <!-- 04--資訊架構-- end -->
+
+
+        <!-- 05--介面設計-- start -->
+        <section class="ui-section">
+
+            <div class="ui-container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h3 class="title">06<br>User Interface Proposal</h3><br>
+                        <h4 class="subtitle" style="font-weight: bold">#1 首頁提供最新即時的訊息</h4>
+                        <div class="ui-info">
+                            <p>在首頁的介面上，提取各單位在意的即時資訊，如果需要更進一步了解細節，可以選擇在觀看更多。</p>
+                        </div>
+                        <img src="img/dashboard/email_index.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h4 class="subtitle" style="font-weight: bold">  #2 表單欄位提供空間</h4>
+                        <div class="ui-info">
+                            <p>在傳統的表單上，提供的是觀看空間較窄小的欄位，在改版上提供欄位舒適的空間感。
+                            </p>
+                        </div>
+                        <img src="img/dashboard/email.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h4 class="subtitle" style="font-weight: bold">  #3 表單欄位的提示訊息</h4>
+                        <div class="ui-info">
+                            <p>在傳統的表單上，每個訊息欄位沒有說明，讓新手使用上難以理解該欄位需要輸入什麼資訊。<br>在改版上提供需要的提示訊息。
+                            </p>
+                        </div>
+                        <img src="img/dashboard/email_send.jpg">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ui-container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h4 class="subtitle" style="font-weight: bold">  #4 系統出現錯誤的解決路線</h4>
+                        <div class="ui-info">
+                            <p>在傳統的系統畫面上，當出現操作錯誤產生當機時，提供用戶多方解決路線，避免用戶產生困惑。
+                            </p>
+                        </div>
+                        <img src="img/dashboard/404page.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h4 class="subtitle" style="font-weight: bold">  #5 其他頁面</h4>
+                        <img src="img/dashboard/dashboard_mockup.png">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <!-- 05--介面設計-- end -->
+
+        <!----
+        <section class="system-section">
+            <div class="info-container">
+                <h3 class="title">07<br>Design System</h3><br>
+            </div>
+            <div class="row">
+                <div class="col-l-4">
+                </div>
+            </div>
+        </section>
+        ----->
+
+
+        <!-- content end-->
+        <!-- main  end-->
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- footer start -->
+    <section id="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="footer-info">
+                        <h4 class="subtitle">Connect with me</h4><br>
+                        <a href="mailto:kaokaiying@gmail.com">kaokaiying@gmail.com</a>
+
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kaokaiying/" target="_blank">
+                            <li class="fab fa-linkedin-in fa-3x"></li>
+                        </a>
+                        <a href="https://www.behance.net/kaokaiying" target="_blank">
+                            <i class="fab fa-behance fa-3x"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <!-- footer end -->
+
+    <!-- copyright start -->
+    <div class="copyright">Copyright @ KAO KAI YING
+    </div>
+    <!-- copyright end -->
+
+    <!-- js start -->
+
+    <script src="vendor/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            //Navbar transition:
+            $(window).scroll(function () {
+                scrolledPx = $(this).scrollTop();
+                if (scrolledPx >= 200) {
+                    //do something
+                    $('.navbar').addClass('active');
+                } else {
+                    //do something
+                    $('.navbar').removeClass('active');
+                }
+
+            })
+
+            //pop-up menu
+            $('.menu-toggle').on('click', function () {
+                $(this).toggleClass('active');
+                $('.navbar .nav').toggleClass('active');
+            })
+
+            $('.nav-link').on('click', function () {
+                $('.menu-toggle').removeClass('active');
+                $('.navbar .nav').removeClass('active');
+            })
+
+
+
+        })
+    </script>
+
+
+    <!-- <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 600px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>-->
+
+
+
+
+
+
+    <!-- js end -->
+</body>
+
+</html>
