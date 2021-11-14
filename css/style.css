@@ -1097,8 +1097,10 @@ img{
 }
 
 .footer-info{
-    text-align: center;
-    
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .footer-info a{
@@ -1123,8 +1125,12 @@ img{
     padding-top: 32px;
 }
 
-.social-icons li{
+.social-icons a{
     padding-right: 48px;
+}
+
+.social-icons a:last-child{
+    padding-right: 0;
 }
 
 .social-icons a:hover{
