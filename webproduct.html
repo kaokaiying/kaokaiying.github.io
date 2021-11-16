@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='kaokaiying personal UIUX website' />
+    <meta property="og:title" content="kaokaiying personal UIUX website">
+    <meta property='og:description' content='kaokaiying - Portfolio website' />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaokaiying.github.io/">
+    <meta property="og:image" content="https://kaokaiying.github.io/img/meta.png">
+    <meta property="og:site_name" content="kaokaiying personal UIUX website">
+    <meta property="og:image:width" content="1440">
+    <meta property="og:image:height" content="1013">
+
+
     <title>Portfolio Website Kaiying</title>
+    <link rel="shortcut icon" href="shortcut icon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="fshortcut icon/avicon.ico" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +28,6 @@
     <link rel="stylesheet" href="css/all.css">
 
     <!----CSS custom---->
-    <link rel="stylesheet" href="assets/css/guideline.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -160,13 +172,16 @@
             </div>
 
             <!-- 點擊放大圖  -->
-            <div class="journey-image">
-                <a href="#journey"><img src="img/web/journey_map_container.jpg"></a>
+            <a class="lightbox" href="#journey">
+                <img src="img/web/journey_map_container.jpg">
+            </a>
+
+            <div class="lightbox-target" id="journey">
+                <img src="img/web/journey_map_container.jpg">
+                <a class="lightbox-close" href="#"></a>
             </div>
 
-            <a href="#journey-section" class="lightbox" id="journey">
-                <img src="img/web/journey_map_container.jpg" width="1440" height="878">
-            </a>
+
         </section>
         <!-- 03--用戶旅程地圖-- end -->
 
@@ -196,20 +211,31 @@
         <section class="ui-section">
             <div class="ui-container">
                 <h3 class="title">06<br>User Interface Proposal</h3><br>
+                <h4 class="maze-report" style="font-weight: bold"><br>
+                    <a href="https://app.maze.co/report/1dj1rkuteogih" target="_blank">
+                        介面改版後的測試任務<br>Go to Maze Report</a>
+                </h4>
+            </div>
+
+            <div class="ui-container">
                 <h4 class="subtitle" style="font-weight: bold">#1 首頁搜尋框改為單一輸入框</h4>
                 <div class="ui-info">
                     <p>用戶自行輸入美食和地區關鍵字，符合一般用戶使用上的習慣，以及重新整理首頁內容編排。</p>
+                    <img src="img/web/web-ui-01.jpg" width="1170" height="425">
                 </div>
-                <img src="img/web/web-ui-01.jpg" width="1170" height="425">
+
             </div>
+
+
 
             <div class="ui-container">
                 <h4 class="subtitle" style="font-weight: bold"> #2 投稿新食記</h4>
                 <div class="ui-info">
                     <p>在新食紀的撰寫上，提供一些預設選項和搜尋餐廳名稱的選項，搜尋結果帶入餐廳基本資料。
                         關於食記內容的部分提供簡單的文字編輯器操作，符合一般用戶常見的操作，降低學習成本。</p>
+                    <img src="img/web/web-ui-02.jpg" width="1170" height="1320">
                 </div>
-                <img src="img/web/web-ui-02.jpg" width="1170" height="1320">
+
             </div>
 
             <div class="ui-container">
@@ -217,8 +243,9 @@
                 <div class="ui-info">
                     <p>讓用戶知到店家資訊或者分店，訂位等資訊，避免其他不相干的資訊或者影片干擾瀏覽或查找資訊。
                     </p>
+                    <img src="img/web/web-ui-03.jpg" width="1170" height="1750">
                 </div>
-                <img src="img/web/web-ui-03.jpg" width="1170" height="1750">
+
             </div>
 
 
@@ -233,19 +260,6 @@
 
         </section>
         <!-- 06--介面設計-- end -->
-
-        <!----
-        <section class="system-section">
-            <div class="info-container">
-                <h3 class="title">07<br>Design System</h3><br>
-            </div>
-            <div class="row">
-                <div class="col-l-4">
-                </div>
-            </div>
-        </section>
-        ----->
-
 
         <!-- content end-->
         <!-- main  end-->
@@ -302,74 +316,47 @@
     </div>
     <!-- copyright end -->
 
-    <!-- js start -->
 
-    <script src="vendor/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            //Navbar transition:
-            $(window).scroll(function () {
-                scrolledPx = $(this).scrollTop();
-                if (scrolledPx >= 200) {
-                    //do something
-                    $('.navbar').addClass('active');
-                } else {
-                    //do something
-                    $('.navbar').removeClass('active');
-                }
-
-            })
-
-            //pop-up menu
-            $('.menu-toggle').on('click', function () {
-                $(this).toggleClass('active');
-                $('.navbar .nav').toggleClass('active');
-            })
-
-            $('.nav-link').on('click', function () {
-                $('.menu-toggle').removeClass('active');
-                $('.navbar .nav').removeClass('active');
-            })
-
-
-
-        })
-    </script>
-
-
-    <!---- <script>
-        //Get the button:
-        mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 600px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-    </script>----->
-
-
-
-
-
-
-    <!-- js end -->
-
-
-
-
+    </div>
 </body>
+
+
+<!-- js start -->
+<script src="vendor/jquery/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        //Navbar transition:
+        $(window).scroll(function () {
+            scrolledPx = $(this).scrollTop();
+            if (scrolledPx >= 200) {
+                //do something
+                $('.navbar').addClass('active');
+            } else {
+                //do something
+                $('.navbar').removeClass('active');
+            }
+        })
+
+        //pop-up menu
+        $('.menu-toggle').on('click', function () {
+            $(this).toggleClass('active');
+            $('.navbar .nav').toggleClass('active');
+        })
+
+        $('.nav-link').on('click', function () {
+            $('.menu-toggle').removeClass('active');
+            $('.navbar .nav').removeClass('active');
+        })
+
+
+
+    })
+</script>
+<!-- js end -->
+
+
+
+
 
 </html>
