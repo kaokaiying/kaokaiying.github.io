@@ -302,9 +302,8 @@
             <h4 class="subtitle" style="font-weight: bold">#4 易用性測試</h4>
             <div class="ui-info">
                 <p>介面改版後的測試任務報告<br>(Maze report 目前僅支援桌面型)</p><br>
-
-                <button class="btn btn-background-slide">
-                    <a href="https://app.maze.co/report/luuxrrkuteotpn" target="_blank">Go to Maze Report</a>
+                <button class="btn btn-background-slide" onclick=appreport()>
+                    <a href="#!">Go to Maze Report</a>
                 </button>
             </div>
         </div>
@@ -395,6 +394,34 @@
 
     })
 </script>
+
+<script>
+
+    function appreport() {
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // true for mobile device
+            alert('Maze Report 目前不支援手機瀏覽器');
+
+        } else {
+            // false for not mobile device
+            alert('即將跳轉到 Maze Report');
+            //todo..
+            window.open("https://app.maze.co/report/luuxrrkuteotpn");
+
+        }
+
+    }
+
+</script>
+
+
+
+
+
+
+
+
 <!-- js end -->
 
 </html>

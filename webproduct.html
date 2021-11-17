@@ -255,8 +255,8 @@
                 <div class="ui-info">
                     <p>介面改版後的測試任務報告<br>(Maze report 目前僅支援桌面型)</p><br>
 
-                    <button class="btn btn-background-slide">
-                        <a href="https://app.maze.co/report/1dj1rkuteogih" target="_blank">Go to Maze Report</a>
+                    <button class="btn btn-background-slide" onclick=webreport()>
+                        <a href="#!">Go to Maze Report</a>
                     </button>
                 </div>
             </div>
@@ -361,14 +361,28 @@
 
     })
 </script>
-<!-----------<script>
-    function removeActive() {
-        document.getElementById('container').classList.remove('is-active')
+
+
+<script>
+
+    function webreport() {
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // true for mobile device
+            alert('Maze Report 目前不支援手機瀏覽器');
+
+        } else {
+            // false for not mobile device
+            alert('即將跳轉到 Maze Report');
+            //todo..
+            window.open("https://app.maze.co/report/1dj1rkuteogih");
+
+        }
+
     }
-    function addActive() {
-        document.getElementById('container').classList.add('is-active')
-    }
-</script>------------->
+
+</script>
+
 
 <!-- js end -->
 

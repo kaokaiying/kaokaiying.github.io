@@ -1480,54 +1480,6 @@ a.lightbox-close:after {
 }
 
 
-/* ----------------------------------------- *\
-    Maze report 彈窗通知
-\* ----------------------------------------- */ 
-
-/* maze report */
-/*
-.maze-popup{
-    width: 320px;
-    height:auto;
-    border-radius: 10px;
-    overflow: hidden;
-    transform: scale(0);
-    transition: .1s;
-}
-
-.btn-close{
-    position: absolute;
-    top:10%;
-    right:5%;
-    cursor:pointer;
-    font-size:20px;
-    color: #333333;
-    z-index: 99999;
-}
-
-.content{
-    padding: 30px;
-    background: #DAE7FF;
-}
-
-.ui-info .content p{
-    margin:0;
-}
-
-.is-active.maze-popup {
-    animation: popup 0.5s;
-    transform: scale(1);
-}
-
-@keyframes popup {
-    0% {transform: scale(0);}
-    20% {transform: scale(1.1);}
-    50% {transform: scale(0.95);}
-    80% {transform: scale(1.05);}
-    100% {transform: scale(1);}
-}
-
-*/
 
 
 
