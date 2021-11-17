@@ -15,7 +15,7 @@ font-family: 'Roboto', sans-serif;*/
 }
 body, html{
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     font-family: 'Lato', 'Noto Sans TC';
     font-size: 15px;
     text-align: center;
@@ -285,7 +285,7 @@ img{
 
 
 .navbar.active{
-    background-color: rgba(207, 222, 243, 0.6);
+    background-color: rgba(207, 222, 243, 0.3);
 }
 
 
@@ -800,36 +800,54 @@ img{
 
 
 
-
-/* portfolio-web */
-
-#third-section{
+/* index-portfolio-dashboard */
+#dashboard-section{
     display: flex;
     justify-content:center;
     align-items:center;
     flex-direction: column;
     margin-bottom:170px;
+    animation-name:animate__fadeInLeft;
+    animation-duration:2s;
 }
 
-.web-container{
+
+@keyframes animate__fadeInLeft{
+    from{
+        left:0;
+    }
+    to{
+        left:100px;
+    }
+}
+
+.dashboard-container{
+    margin-top:100px;
     width: 100%;
-    margin-bottom:30px;
+    margin-bottom:300px;
+    height: 260px;
 }
 
-
-.portfolio-web{
+.portfolio-dashboard{
     display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.clear{
+    clear: both;
 }
 
 
 @media screen and (max-width:768px){
-    .web-container{
+    .dashboard-container{
+        margin-top:300px;
         display:flex;
         justify-content: center;
         align-items:center;
     }
 
-    .portfolio-web{
+    .portfolio-dashboard{
         justify-content: center;
         align-items: left;
     }
@@ -850,6 +868,16 @@ img{
 }
 
 @media screen and (max-width:375px){
+    .dashboard-container{
+        margin-bottom:100px;
+    }
+    
+
+    .portfolio-info,
+    .other-info{
+        padding-top: 0px;
+    }
+
     .other-info .title{
         font-size:32px;
         line-height:42px;
@@ -861,19 +889,36 @@ img{
         line-height: 34px;
         text-align: left;
     }
-  
 
+    .float-right-img,
+    .float-left-img{
+        display:none;
+    }
+  
 }
 
 
 
 
 
-
-/* portfolio-app */
+/* index-portfolio-app */
 #second-section{
     margin-bottom:170px;
+    animation-name:animate__fadeInRightBig;
+    animation-duration:2s;
+    animation-delay:2s;
 }
+
+
+@keyframes animate__fadeInRightBig{
+    from{
+        right:0;
+    }
+    to{
+        right:100px;
+    }
+}
+
 
 .app-container{
     width: 100%;
@@ -958,42 +1003,49 @@ img{
 }
 
 
-/* portfolio-dashboard */
-#dashboard-section{
+/* index-portfolio-web */
+
+#third-section{
     display: flex;
     justify-content:center;
     align-items:center;
     flex-direction: column;
     margin-bottom:170px;
+    animation-name:animate__fadeInLeftBig;
+    animation-duration:2s;
+    animation-delay:4s;
 }
 
-.dashboard-container{
-    margin-top:100px;
+
+@keyframes animate__fadeInLeftBig{
+    from{
+        left:0;
+    }
+    to{
+        left:100px;
+    }
+}
+
+
+.web-container{
     width: 100%;
-    margin-bottom:300px;
-    height: 260px;
+    margin-bottom:30px;
 }
 
-.portfolio-dashboard{
+
+.portfolio-web{
     display: flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.clear{
-    clear: both;
 }
 
 
 @media screen and (max-width:768px){
-    .dashboard-container{
-        margin-top:300px;
+    .web-container{
         display:flex;
         justify-content: center;
         align-items:center;
     }
 
-    .portfolio-dashboard{
+    .portfolio-web{
         justify-content: center;
         align-items: left;
     }
@@ -1010,20 +1062,17 @@ img{
         line-height: 34px;
         text-align: left;
     }
+
+    .behance-info .title{ 
+        font-size:48px;
+        line-height: 58px;
+        text-align: center;
+    }
+
     
 }
 
 @media screen and (max-width:375px){
-    .dashboard-container{
-        margin-bottom:100px;
-    }
-    
-
-    .portfolio-info,
-    .other-info{
-        padding-top: 0px;
-    }
-
     .other-info .title{
         font-size:32px;
         line-height:42px;
@@ -1036,11 +1085,13 @@ img{
         text-align: left;
     }
 
-    .float-right-img,
-    .float-left-img{
-        display:none;
+    .behance-info .title{
+        font-size:32px;
+        line-height:42px;
+        text-align: center;
     }
   
+
 }
 
 
@@ -1048,7 +1099,11 @@ img{
 /* latest on behance */
 #latest-on-behance{
     margin-bottom: 100px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
+
 
 .behance-container{
     width: 100%;
@@ -1250,9 +1305,6 @@ img{
 }
 
 
-
-
-
 .ui-container{
     display: flex;
     justify-content:center;
@@ -1261,19 +1313,6 @@ img{
 }
 
 
-/* maze report */
-
-
-.ui-container .maze-report a{
-    display: inline-block;
-    border-bottom: 2px solid #272727;
-
-}
-
-.ui-container .maze-report a:hover{
-    color: #B7CFF1; 
-    border-bottom: 3px solid #B7CFF1;
-}
 
 
 @media screen and (max-width:768px){
@@ -1334,6 +1373,11 @@ img{
      
 }
 
+
+
+
+
+
 /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
 .lightbox-target img {
     margin:0 auto;
@@ -1350,6 +1394,25 @@ img{
     transition: .5s ease-in-out;
       
     }
+
+
+@media screen and (max-width:375px){
+    .lightbox-target img {
+        margin:0 auto;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right:0;
+        bottom: 0;
+        max-height: 0%;
+        max-width: 0%;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+                        
+    }
+}
     
 /* Styles the close link, adds the slide down transition */
 
@@ -1369,8 +1432,10 @@ a.lightbox-close {
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     }
+
+
     
-    /* Provides part of the "X" to eliminate an image from the close link */
+/* Provides part of the "X" to eliminate an image from the close link */
     
 a.lightbox-close:before {
     content: '';
@@ -1421,17 +1486,78 @@ a.lightbox-close:after {
 .lightbox-target:target a.lightbox-close {
     top: 0;
 }
-    
+
+@media screen and (max-width:375px){
+    .lightbox-target:target a.lightbox-close {
+        top: 20%;
+    }
+   
+}
+/* ----------------------------------------- *\
+    Maze report 彈窗通知
+\* ----------------------------------------- */ 
+
+/* maze report */
+/*
+.maze-popup{
+    width: 320px;
+    height:auto;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: .1s;
+}
+
+.btn-close{
+    position: absolute;
+    top:10%;
+    right:5%;
+    cursor:pointer;
+    font-size:20px;
+    color: #333333;
+    z-index: 99999;
+}
+
+.content{
+    padding: 30px;
+    background: #DAE7FF;
+}
+
+.ui-info .content p{
+    margin:0;
+}
+
+.is-active.maze-popup {
+    animation: popup 0.5s;
+    transform: scale(1);
+}
+
+@keyframes popup {
+    0% {transform: scale(0);}
+    20% {transform: scale(1.1);}
+    50% {transform: scale(0.95);}
+    80% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}
+
+*/
+
+
 
 /* --------------------------- *\
     APP-product.html
 \* --------------------------- */
+.ui-info p {
+    margin: 0 20%;
+    text-align: center;
+}
+
+
 .ui-app-image{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
 }
 
 .ui-app-image img{
@@ -1442,6 +1568,21 @@ a.lightbox-close:after {
 .persona-list{
     margin-bottom:32px;
 }
+
+
+@media screen and (max-width:768px){
+    .ui-info p{
+        margin: 0 10%;
+    }
+    
+}
+
+@media screen and (max-width:375px){
+    .ui-info p{
+        margin: 0 5%;
+    }
+}
+
 
 /* --------------------------- *\
     Dashboard-product.html
