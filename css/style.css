@@ -1399,7 +1399,8 @@ img{
 @media screen and (max-width:375px){
     .lightbox-target img {
         top: 30%;
-                     
+        width:100vw;  
+        /*height:100vh;*/  
     }
     .lightbox-target:target a.lightbox-close {
         top: 30%;
