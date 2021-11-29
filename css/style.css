@@ -42,9 +42,8 @@ a{
 
 h2{
     font-family: 'Lato', 'Noto Sans TC';
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 115px;
+    font-size: 2rem;
+    font-weight: 400;
     letter-spacing: 0px;
     text-align: center;
 }
@@ -52,14 +51,14 @@ h2{
 h3{
     font-family: 'Lato', 'Noto Sans TC';
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #333333;
 }
 
 h4, p{
     font-family: 'Lato', 'Noto Sans TC';
     font-weight: 200;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #333333;
     margin-bottom: 12px;
 }
@@ -267,6 +266,10 @@ img{
 .logo a:hover{
     color: #B7CFF1;
 }
+
+
+
+
 
 
 /* ---------------------------- *\
@@ -679,7 +682,8 @@ img{
 .portfolio-info h2,
 .other-info h2{
     text-align: left;
-    font-size: 96px;
+    font-size: 64px;
+    line-height: 40px;
 }
 
 .portfolio-image{
@@ -936,25 +940,35 @@ img{
 }
 
 
+.index-app-background{
+    position:relative;
+    margin: 0 auto;
+    top:50%;
+    transform: translateY(-50%);
+}
+
 .float-right-img{
-    width: 90%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    float: right;
-    margin-top: 250px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
 }
 
 
+.index-left-background{
+    position:relative;
+    margin: 0 auto;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+
+
 .float-left-img{
-    width: 90%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    float: left;
-    margin-top: 250px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
 }
 
 
@@ -1037,6 +1051,9 @@ img{
     display: flex;
 }
 
+.behance-info .title{
+    font-size: 64px;
+}
 
 @media screen and (max-width:768px){
     .web-container{
@@ -1116,10 +1133,12 @@ img{
 }
 
 .banner-main-btn{
-    padding-top:55px;
+    padding-top:0px;
 }
 
-
+.behance-main-btn{
+    padding-top:24px;
+}
 
 /* footer */
 
