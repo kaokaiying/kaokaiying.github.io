@@ -815,6 +815,17 @@ img{
     animation-duration:2s;
 }
 
+.web-banner-container{
+    padding-top: 100px;
+}
+
+@media screen and (max-width:375px){
+    .web-banner-container{
+        padding-top: 60px;
+    }
+}
+
+
 
 @keyframes animate__fadeInLeft{
     from{
