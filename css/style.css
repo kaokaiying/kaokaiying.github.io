@@ -1073,6 +1073,7 @@ img{
 }
 
 @media screen and (max-width:375px){
+    
     .other-info .title{
         font-size:32px;
         line-height:42px;
@@ -1323,6 +1324,10 @@ img{
 }
 
 @media screen and (max-width:375px){
+    .web-banner-container img{
+        max-width:100%;
+        padding-top: 100px;
+    }
     .main-problem{
         height: 450px;
     }
