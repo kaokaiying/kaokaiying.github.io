@@ -27,9 +27,11 @@ h1, h3, h4, p, span, i, img, div, ul, li, a, section{
     margin: 0;
     padding: 0;
 } 
+
 ul,li{
     list-style: none;
 }
+
 h3, h4, a, p, span{
     text-decoration: none;
     color: #333333;
@@ -44,8 +46,8 @@ h2{
     font-family: 'Lato', 'Noto Sans TC';
     font-size: 2rem;
     font-weight: 400;
-    letter-spacing: 0px;
     text-align: center;
+    line-height: 1.1;
 }
 
 h3{
@@ -53,19 +55,40 @@ h3{
     font-weight: 300;
     font-size: 1.8rem;
     color: #333333;
+    line-height: 1.1;
 }
 
-h4, p{
+h4{
     font-family: 'Lato', 'Noto Sans TC';
     font-weight: 200;
     font-size: 1.5rem;
-    color: #333333;
+    color: #575757;
     margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+h5{
+    font-family: 'Lato', 'Noto Sans TC';
+    font-weight: 100;
+    font-size: 1.2rem;
+    color: #bbbbbb;
+    margin-bottom: 12px;
+    line-height: 1.5;
 }
 
 img{
     max-width: 100%;
     height: auto;
+}
+
+p{
+    font-family: 'Lato', 'Noto Sans TC';
+    font-weight: 100;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #929292;
+    margin-bottom: 12px;
+    line-height: 1.5;
 }
 
 /* ----------------------------------- *\
@@ -83,17 +106,19 @@ img{
 
 .row{
     display: flex;
-    width: 100%;
-    margin: 0 -16px;
+    margin: 0;
+    padding: 0;
+
 }
 .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-6{
-    padding: 0 16px;
+    padding: 0px;
 }
 .col-lg-2{
     width: 50%;
 }
 .col-lg-3{
     width: 33.3333%;
+    padding:0 16px;
 }
 .col-lg-4{
     width: 25%;
@@ -110,6 +135,10 @@ img{
 /* lg-->(768px)-->md-->(375px)-->sm */
 
 @media screen and (max-width:768px){
+    .col-md-2, .col-md-3, .col-md-4, .col-md-6{
+        padding: 0px;
+    }
+
     .col-md-3{
         width: 25%;
     }
@@ -129,6 +158,11 @@ img{
 }
 
 @media screen and (max-width:375px){
+    .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-6{
+        padding: 0px;
+    }
+
+
     .col-sm-3{
         width: 25%;
     }
@@ -143,6 +177,7 @@ img{
 
     .col-sm-12{
         width: 100%;
+   
     }
 
 }
@@ -169,7 +204,7 @@ img{
     box-shadow: 11px 11px 40px -20px rgba(104,104,104,0.7);
     position: relative;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 36px;
     overflow: hidden;
     border: none !important;
 
@@ -181,7 +216,7 @@ img{
 .btn a{
     display: inline-block;
     color: white;
-    padding: 20px 100px;
+    padding: 16px 64px;
 }
 
 .btn:focus,
@@ -244,6 +279,59 @@ img{
 }
 
 
+.btn-primary{
+    box-shadow: 11px 11px 40px -20px rgba(188, 188, 188, 0.5);
+    position: relative;
+    cursor: pointer;
+    border-radius: 36px;
+    overflow: hidden;
+    border: none!important;
+    background-color:#dbeaff;
+    margin-left: 32px;
+    padding: 17px 64px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.btn-primary:hover{ 
+    border: none!important;
+    background-color:#B7CFF1;
+    
+}
+
+.btn-primary:hover a{ 
+    border: none!important;
+    color:#333333;
+    
+}
+
+.btn-secondary{
+    box-shadow: 11px 11px 40px -20px rgba(188, 188, 188, 0.5);
+    position: relative;
+    cursor: pointer;
+    border-radius: 36px;
+    overflow: hidden;
+    border: 1px solid #333333 !important;
+    background-color:#ffffff;
+    margin-left: 32px;
+    padding: 16px 64px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+
+.btn-secondary:hover{ 
+    border: none!important;
+    background-color:#333333;
+    
+}
+
+.btn-secondary:hover a{ 
+    border: none!important;
+    color:#ffffff;
+    
+}
+
+
+
 /* ---------------------------- *\
     component
 \* ---------------------------- */
@@ -251,8 +339,6 @@ img{
 .header{
     width: 100%;
 }
-
-
 
 .logo{
     font-size: 24px;
@@ -266,10 +352,6 @@ img{
 .logo a:hover{
     color: #B7CFF1;
 }
-
-
-
-
 
 
 /* ---------------------------- *\
@@ -682,7 +764,7 @@ img{
 .portfolio-info h2,
 .other-info h2{
     text-align: left;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 40px;
 }
 
@@ -706,9 +788,6 @@ img{
 
 .banner-container{
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items:center;
     margin-top: 60px;
     padding-top:100px;
     padding-bottom:64px;
@@ -721,7 +800,6 @@ img{
 }
 
 .banner-right-btn{
-    padding-top:100px;
     padding-right:20%;
 }
 
@@ -729,37 +807,41 @@ img{
 
 .banner-left-title .title{
     font-family: Lato;
-    font-size: 96px;
+    font-size: 64px;
     font-weight: 700;
-    line-height: 115px;
+    padding-bottom: 24px;
+    line-height: 1.1;
     
 }
 
 .banner-left-title .subtitle{
     color:#5F5F5F;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 24px;
+    line-height: 1.5;
 }
 
 
 
 @media screen and (max-width:768px){
-    .banner-container{
+    .banner-container .row{
         display:flex;
         justify-content: center;
         align-items:center;
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding-top: 120px;
         padding-bottom:64px;
     }
     .banner-left-title .title{
         font-size:48px;
-        line-height: 58px;
+        line-height: 1.1;
         text-align: center;
     }
 
     .banner-left-title .subtitle{
         font-size:24px;
-        line-height: 34px;
+        line-height: 1.5;
         text-align: center;
     }
     .banner-right-btn {
@@ -776,21 +858,37 @@ img{
 
 
 @media screen and (max-width:375px){
+    .banner-container .row{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column-reverse;
+        padding-top: 64px;
+    }
+
     .banner-left-title .title{
         font-size:32px;
-        line-height:42px;
+        line-height: 1.1;
         text-align: center;
     }
 
     .banner-left-title .subtitle{
-        font-size:24px;
-        line-height: 34px;
+        font-size:18px;
+        line-height: 1.5;
         text-align: center;
+        padding: 0 24px;
     }
     .banner-right-btn {
         padding-top:0px;
         padding-right:0px;
     }
+
+    .banner-right-btn img {
+        width:200px;
+        height:200px;
+    }
+
+
     .banner-left-title{
         padding-left:0px;
      }
@@ -799,6 +897,18 @@ img{
      }
      .scroll-down-text{
         display:none;
+    }
+
+
+    .btn-primary{
+      
+        margin-bottom: 32px;
+        
+    }
+
+    .btn-secondary{
+        margin-bottom: 32px;
+       
     }
 }
 
@@ -1054,7 +1164,7 @@ img{
 
 .web-container{
     width: 100%;
-    margin-bottom:30px;
+
 }
 
 
@@ -1143,9 +1253,7 @@ img{
     margin-bottom:55px;
 }
 
-.banner-main-btn{
-    padding-top:0px;
-}
+
 
 .behance-main-btn{
     padding-top:24px;
@@ -1326,7 +1434,7 @@ img{
     border-radius: 20px;
     padding:60px 32px;
     margin-bottom: 32px;
-    height: 400px;
+    height: 500px;
 }
 
 .main-problem h4{
@@ -1346,7 +1454,7 @@ img{
 
 @media screen and (max-width:768px){
     .main-problem{
-        height: 300px;
+        height: 400px;
     }
     .info-container{
         margin: 0 10%;
@@ -1532,8 +1640,8 @@ a.lightbox-close:after {
 }
 
 .ui-app-image img{
-    -webkit-box-shadow: 5px 5px 15px 1px #e3e3e3; 
-    box-shadow: 5px 5px 15px 1px #e3e3e3; 
+    
+    padding: 0 24px;
 }
 
 .persona-list{
@@ -1552,9 +1660,47 @@ a.lightbox-close:after {
     .ui-info p{
         margin: 0 5%;
     }
+    .ui-app-image img{
+       
+        padding: 0 24px;
+    }
 }
 
 
 /* --------------------------- *\
     Dashboard-product.html
 \* --------------------------- */
+
+
+.info-container h2{
+    padding-top:32px;
+    padding-bottom:32px;
+}
+
+#journey-section,
+#wireframe-section,
+#persona-section,
+#info-section,
+#ui-section,
+#structure-section,
+#api-section,
+#goal-section{
+    padding-bottom:100px;
+}
+
+#persona-section .product-info .design-goal{
+    padding-bottom:32px;
+}
+
+
+
+#persona-section .product-info .design-goal li,
+#api-section .design-goal li{
+    list-style-type: decimal;
+    text-align:left;
+    font-size: 18px;
+}
+
+#ui-section .ui-info p{
+    text-align: left;
+}

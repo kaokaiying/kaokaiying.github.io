@@ -103,20 +103,24 @@
     <div class="container">
         <!-- main  start -->
         <!-- 01--專案簡介-- start -->
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <section id="info-section">
-                    <div class="info-container">
-                        <h3 class="title">01<br>專案簡介</h3><br>
-                        <div class="product-info">
-                            <p>這是一個公司行銷電子報系統後台的改版專案，​整合各部門對於系統的需求和管理，提升電子報系統效率。我的目標是透過存在系統已久的問題和訪談使用該系統的各部門同事，思考再次優化後台系統。
-                            </p>
+        <section id="introduction-section">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <section id="info-section">
+                        <div class="info-container">
+                            <h2 class="title"> 行銷電子報後台系統</h2>
+                            <h3 class="title">01<br>專案簡介</h3><br>
+                            <div class="product-info">
+                                <p>這是一個公司行銷電子報系統後台的改版專案，​整合各部門對於系統的需求和管理，提升電子報系統效率。我的目標是透過存在系統已久的問題和訪談使用該系統的各部門同事，思考再次優化後台系統。
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                </section>
+                    </section>
+                </div>
             </div>
-        </div>
+        </section>
+
 
         <!-- 01--專案簡介-- end -->
 
@@ -132,28 +136,31 @@
                             當各部門同仁使用該系統時，會有以下問題</span></p>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-lg-3 col-md-12 col-sm-12">
+
                     <div class="main-problem">
+                        <img src="img/dashboard/dash-01.png" width="160" height="160" alt="">
                         <h4 style="font-weight: bold;">設計排信</h4>
                         <p>每份電子報都需要編寫語法，不知道可不可以建置可拖曳的元件快速建立電子報？而且排信系統介面對於新人不友善，操作好複雜。</p>
                     </div>
-                    <img src="img/dashboard/dash-01.png" width="160" height="160" alt="">
+
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12">
                     <div class="main-problem">
+                        <img src="img/dashboard/dash-02.png" width="160" height="160" alt="">
                         <h4 style="font-weight: bold;">行銷數據</h4>
                         <p>每個活動的成效不知道好不好？希望能有開信率，點閱率，退信率等數據。</p>
                     </div>
-                    <img src="img/dashboard/dash-02.png" width="160" height="160" alt="">
+
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12">
                     <div class="main-problem">
+                        <img src="img/dashboard/dash-03.png" width="160" height="160" alt="">
                         <h4 style="font-weight: bold;">主管簽核</h4>
                         <p>每個活動都要順簽才通過，還要口頭通知下一位主管，不知道能不能客製每個活動的簽核主管呢？</p>
                     </div>
-                    <img src="img/dashboard/dash-03.png" width="160" height="160" alt="">
+
                 </div>
             </div>
 
@@ -162,23 +169,15 @@
         <!-- 02--研究問題與目標-- end -->
 
         <!-- 03--API說明圖示-- start -->
-        <section id="journey-section">
+        <section id="api-section">
             <div class="info-container">
                 <h3 class="title">03<br>設計目標</h3><br>
-                <div class="product-info">
-                    <ul class="persona-list">
-                        <li>
-                            <p>1. 透過訪談重點同仁（設計排信人員），在第一階段重新規劃給新手和熟手友善且幫助快速建立電子報和排信的介面設計。</p>
-                        </li>
-                        <li>
-                            <p>2. 在系統首頁提供給各部門同仁重點資訊，方便各部門同仁登入後查看。</p>
-                        </li>
-                        <li>
-                            <p>3. 整合舊系統和業務資料庫客戶名單，當資料來源整合後，新系統使用時只需同步更新成最新的資料庫即可。</p>
-                        </li>
-                    </ul>
+                <ul class="design-goal">
+                    <li>在第一階段重新規劃給新手和熟手友善且幫助快速建立電子報和排信的介面設計。</li>
+                    <li>在系統首頁提供給各部門同仁重點資訊，方便各部門同仁登入後查看。</li>
+                    <li>整合舊系統和業務資料庫客戶名單，資料來源整合後，新系統只需同步更新成最新的資料庫即可。</li>
+                </ul>
 
-                </div>
             </div>
 
             <!-- 點擊放大圖  -->
@@ -192,7 +191,7 @@
 
 
         <!-- 04--資訊架構-- start -->
-        <section class="structure-section">
+        <section id="structure-section">
             <div class="info-container">
                 <h3 class="title">04<br>資訊架構</h3><br>
             </div>
@@ -202,12 +201,12 @@
 
 
         <!-- 05--介面設計-- start -->
-        <section class="ui-section">
+        <section id="ui-section">
 
             <div class="ui-container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                        <h3 class="title">06<br>User Interface Proposal</h3><br>
+                        <h3 class="title">06<br>介面設計</h3><br>
                         <h4 class="subtitle" style="font-weight: bold">#1 首頁提供最新即時的訊息</h4>
                         <div class="ui-info">
                             <p>在首頁的介面上，提取各單位在意的即時資訊，如果需要更進一步了解細節，可以選擇在觀看更多。</p>
@@ -235,7 +234,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <h4 class="subtitle" style="font-weight: bold">  #3 表單欄位的提示訊息</h4>
                         <div class="ui-info">
-                            <p>在傳統的表單上，每個訊息欄位沒有說明，讓新手使用上難以理解該欄位需要輸入什麼資訊。<br>在改版上提供需要的提示訊息。
+                            <p>在傳統的表單上，每個訊息欄位沒有說明，讓新手使用上難以理解該欄位需要輸入什麼資訊。在改版上提供需要的提示訊息。
                             </p>
                         </div>
                         <img src="img/dashboard/email_send.jpg">
@@ -279,7 +278,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="footer-info">
-                        <h4 class="subtitle">Connect with me</h4><br>
+                        <h2 class="subtitle">Connect with me</h2><br>
                         <a href="mailto:kaokaiying@gmail.com">kaokaiying@gmail.com</a>
 
                     </div>
