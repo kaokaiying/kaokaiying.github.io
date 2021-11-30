@@ -880,29 +880,27 @@ p{
     .banner-right-btn img {
         width:200px;
         height:200px;
+        text-align: center;
     }
 
 
     .banner-left-title{
         padding-left:0px;
      }
-     .scroll-section{
+     .scroll-down-line{
          display:none;
      }
-     .scroll-down-text{
+     .scroll-down-text a{
         display:none;
     }
 
 
     .btn-primary{
-      
-        margin-bottom: 32px;
-        
+        margin-bottom: 32px!important;
     }
 
     .btn-secondary{
-        margin-bottom: 32px;
-       
+        margin-bottom: 32px!important;
     }
 }
 
