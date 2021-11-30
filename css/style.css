@@ -283,7 +283,7 @@ p{
     box-shadow: 11px 11px 40px -20px rgba(188, 188, 188, 0.5);
     position: relative;
     cursor: pointer;
-    border-radius: 36px!important;;
+    border-radius: 36px!important;
     overflow: hidden;
     border: none!important;
     background-color:#dbeaff;
@@ -883,6 +883,7 @@ p{
    
 
     .banner-right-btn{
+        margin: 0 auto;
         padding-right:0px;
     }
 
@@ -904,11 +905,11 @@ p{
 
 
     .btn-primary{
-        margin-bottom: 32px!important;
+        margin-bottom: 32px;
     }
 
     .btn-secondary{
-        margin-bottom: 32px!important;
+        margin-bottom: 32px;
     }
 }
 
