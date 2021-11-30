@@ -855,18 +855,23 @@ p{
 
 
 @media screen and (max-width:375px){
+    .banner-container{
+        padding-top:0px;
+        margin-top:0px;
+    }
+
     .banner-container .row{
         display:flex;
         justify-content: center;
         align-items:center;
         flex-direction: column-reverse;
-        padding-top: 64px;
     }
 
     .banner-left-title .title{
         font-size:32px;
         line-height: 1.1;
         text-align: center;
+        padding-bottom:0px;
     }
 
     .banner-left-title .subtitle{
@@ -877,10 +882,13 @@ p{
     }
    
 
+    .banner-right-btn{
+        padding-right:0px;
+    }
+
     .banner-right-btn img {
         width:200px;
         height:200px;
-        text-align: center;
     }
 
 
@@ -1182,20 +1190,20 @@ p{
     
     .other-info .title{ 
         font-size:48px;
-        line-height: 58px;
+        line-height: 1.5;
         text-align: left;
     }
 
     .other-info .subtitle{
         font-size:48px;
         font-size:24px;
-        line-height: 34px;
+        line-height: 1.5;
         text-align: left;
     }
 
     .behance-info .title{ 
         font-size:48px;
-        line-height: 58px;
+        line-height: 1.1;
         text-align: center;
     }
 
@@ -1206,19 +1214,19 @@ p{
     
     .other-info .title{
         font-size:32px;
-        line-height:42px;
+        line-height:1.1;
         text-align: left;
     }
 
     .other-info .subtitle{
         font-size:24px;
-        line-height: 34px;
+        line-height: 1.5;
         text-align: left;
     }
 
     .behance-info .title{
         font-size:32px;
-        line-height:42px;
+        line-height:1.1;
         text-align: center;
     }
   
