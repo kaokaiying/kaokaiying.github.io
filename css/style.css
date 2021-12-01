@@ -1480,6 +1480,7 @@ p{
 @media screen and (max-width:768px){
     .main-problem{
         height: 400px;
+        padding: 24px;
     }
     .info-container{
         margin: 0 10%;
@@ -1493,6 +1494,7 @@ p{
     }
     .main-problem{
         height: 450px;
+        padding: 24px;
     }
     .problem-container{
         font-weight: 200;
