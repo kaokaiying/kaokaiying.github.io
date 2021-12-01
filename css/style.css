@@ -1213,14 +1213,14 @@ p{
     
     .other-info .title{ 
         font-size:48px;
-        line-height: 1.5;
+        line-height: 1.1;
         text-align: left;
     }
 
     .other-info .subtitle{
         font-size:48px;
         font-size:24px;
-        line-height: 1.5;
+        line-height: 1;
         text-align: left;
     }
 
@@ -1243,7 +1243,7 @@ p{
 
     .other-info .subtitle{
         font-size:24px;
-        line-height: 1.5;
+        line-height: 1;
         text-align: left;
     }
 
